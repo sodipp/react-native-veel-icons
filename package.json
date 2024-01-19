@@ -27,6 +27,7 @@
   ],
   "scripts": {
     "example": "yarn workspace react-native-veel-icons-example",
+    "start:ios": "yarn example ios",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -78,7 +79,9 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-svg": "*",
+    "react-native-svg-transformer": "*"
   },
   "workspaces": [
     "example"
