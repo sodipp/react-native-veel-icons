@@ -4,18 +4,18 @@ icons made for the veel react native app
 
 ## Installation
 
+1. Add [react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer) as dependency
+
+2. Run command
+
 ```sh
-npm install react-native-veel-icons
+yarn add react-native-veel-icons
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-veel-icons';
-
-// ...
-
-const result = await multiply(3, 7);
+import { DeleteIcon } from 'react-native-veel-icons';
 ```
 
 ## Contributing
