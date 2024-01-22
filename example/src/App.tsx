@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 import { StyleSheet, View } from 'react-native';
-import { DeleteIcon } from 'react-native-veel-icons';
+import { Vicon } from 'react-native-veel-icons';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <DeleteIcon />
+      <Vicon name="setting" height={50} width={50} />
     </View>
   );
 }

@@ -4,10 +4,5 @@ declare module '*.svg' {
   const content: React.FC<SvgProps>;
   export default content;
 }
-interface SvgIconProps {
-  width?: number;
-  height?: number;
-  color?: string[];
-  active?: boolean;
-  pathname?: string;
-}
+
+declare module 'react-native-svg';
