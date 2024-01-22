@@ -8,8 +8,8 @@ export default function Vicon({
   width = 24,
 }: {
   name: 'setting' | 'user' | 'video' | 'tag';
-  height: number;
-  width: number;
+  height?: number;
+  width?: number;
 }) {
   const Icon = Icons[name];
 
