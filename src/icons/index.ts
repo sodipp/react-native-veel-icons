@@ -5,5 +5,4 @@ const Icons = {
   video: require('./video.svg').default,
 };
 
-export const iconNames = Object.keys(Icons);
 export default Icons;

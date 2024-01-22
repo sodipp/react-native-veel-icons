@@ -4,8 +4,8 @@ import Icons from './icons';
 
 export default function Vicon({
   name,
-  height,
-  width,
+  height = 24,
+  width = 24,
 }: {
   name: 'setting' | 'user' | 'video' | 'tag';
   height: number;
