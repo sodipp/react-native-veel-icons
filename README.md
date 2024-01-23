@@ -15,7 +15,17 @@ yarn add react-native-veel-icons
 ## Usage
 
 ```js
-import { DeleteIcon } from 'react-native-veel-icons';
+import * as React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Vicon } from 'react-native-veel-icons';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Vicon name="setting" height={50} width={50} />
+    </View>
+  );
+}
 ```
 
 ## Contributing

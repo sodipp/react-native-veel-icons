@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import { StyleSheet, View } from 'react-native';
 import { Vicon } from 'react-native-veel-icons';
 
