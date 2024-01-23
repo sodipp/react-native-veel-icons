@@ -1,17 +1,37 @@
 import React from 'react';
+import { StyleSheet, Text } from 'react-native';
 
-import Icons from './icons';
+import glyphMap from '../src/font/unicodesMap.json';
+
+interface IconGlyphMap {
+  [key: string]: number;
+}
 
 export default function Vicon({
   name,
-  height = 24,
-  width = 24,
+  size = 24,
+  color,
 }: {
-  name: 'setting' | 'user' | 'video' | 'tag';
-  height?: number;
-  width?: number;
+  name: string;
+  size?: number;
+  color?: string;
 }) {
-  const Icon = Icons[name];
+  const iconGlyphMap: IconGlyphMap = glyphMap;
+  let glyph = name ? iconGlyphMap[name] || '??' : '';
 
-  return <Icon height={height} width={width} />;
+  if (typeof glyph === 'number') {
+    glyph = String.fromCodePoint(glyph);
+  }
+
+  return (
+    <Text
+      style={StyleSheet.flatten({
+        fontFamily: 'Vicons',
+        fontSize: size,
+        color: color,
+      })}
+    >
+      {glyph}
+    </Text>
+  );
 }
