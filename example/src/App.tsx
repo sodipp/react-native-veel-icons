@@ -13,9 +13,14 @@ export default function App() {
     <View style={styles.container}>
       {fontsLoaded && !fontError ? (
         <>
-          <Vicon name="Vicons-tag" size={32} />
+          {/* default */}
+          <Vicon name="Vicons-tag" />
 
-          <Vicon name="Vicons-setting" size={32} />
+          {/* with speicific size and color values */}
+          <Vicon name="Vicons-video" size={40} color={['red']} />
+
+          {/* gradient */}
+          <Vicon name="Vicons-setting" size={50} color={['red', 'blue']} />
         </>
       ) : (
         <Text>Error while loading font</Text>
