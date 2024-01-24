@@ -1,6 +1,6 @@
 {
   "name": "react-native-veel-icons",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "icons made for the veel react native app",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

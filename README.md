@@ -4,11 +4,21 @@ expo icons made for the veel react native app
 
 ## Installation
 
-1. Run command
+1. Configure [`expo-fonts`](https://docs.expo.dev/versions/latest/sdk/font/) as shown below in the usage section
 
-```sh
-yarn add react-native-veel-icons
-```
+2. Run command
+
+    ```sh
+    yarn add react-native-veel-icons
+    ```
+
+
+    This will automatically install the following necessary dependencies:
+
+    - `@react-native-masked-view/masked-view`
+    - `expo-linear-gradient`
+
+    Ensure that you have the correct versions of these dependencies by checking your `package.json` with file to avoid issues.
 
 ## Usage
 
@@ -20,7 +30,7 @@ import { Vicon } from 'react-native-veel-icons';
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
-    Vicons: require('../assets/Vicons.ttf'),
+    Vicons: require('.node_modules/react-native-veel-icons/Vicons.ttf'),
   });
 
   return (
@@ -43,6 +53,35 @@ export default function App() {
   );
 }
 ```
+
+## Name of all the icons
+|                         |                         |                         |
+|-------------------------|-------------------------|-------------------------|
+| add                     | arrowhead-down          | authenticity           |
+| bell                    | bookmark                | bug                     |
+| call                    | campaign                | cancel-circle           |
+| cancel-circle-filled    | capture                 | chat                    |
+| check                   | check-cirlce            | clock                   |
+| collaboration           | content-creator         | content-verified        |
+| diamond                 | diamond-alter-filled    | diamond-bold            |
+| diamond-filled          | disabled-filled         | document                |
+| document-alter          | double-check            | explore                 |
+| eye-close               | eye-open                | home                    |
+| information-circle      | left-arrow              | like                    |
+| link                    | location                | logout                  |
+| mail-open               | map                     | monetization            |
+| next-mods               | notification            | pause-circle-filled     |
+| payment                 | play-circle             | plus                    |
+| plus-cirlce             | radio                   | radio-filled            |
+| retake                  | right-arrow             | rocket                  |
+| search                  | send-campaign           | send-cancel             |
+| setting                 | star-full-filled        | star-half-filled        |
+| star-unfilled           | tag                     | talent                  |
+| tax                     | up-arrow-circle         | user                    |
+| user-video              | users                   | users-plus              |
+| video                   | video-pause             | videos                  |
+| visibility              | window                  |                         |
+
 
 ## Contributing
 
