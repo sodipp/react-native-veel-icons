@@ -3,22 +3,19 @@
 expo icons made for the veel react native app
 
 ## Installation
-
-1. Configure [`expo-fonts`](https://docs.expo.dev/versions/latest/sdk/font/) as shown below in the usage section
-
-2. Run command
-
+1. Run command
     ```sh
     yarn add react-native-veel-icons
     ```
-
-
     This will automatically install the following necessary dependencies:
 
     - `@react-native-masked-view/masked-view`
     - `expo-linear-gradient`
 
     Ensure that you have the correct versions of these dependencies by checking your `package.json` with file to avoid issues.
+
+2. Configure [`expo-fonts`](https://docs.expo.dev/versions/latest/sdk/font/) to load the `Vicons` font family file placed in `node_modules/react-native-veel-icons/src/font/Vicons.ttf`. You can either load it directly from there or copy it and manage it with your other assets.
+
 
 ## Usage
 
