@@ -21,6 +21,7 @@ import { useFonts } from 'expo-font';
 import { Vicon } from 'react-native-veel-icons';
 
 export default function App() {
+  //NOTE: refer to expo-font docs for other approaches for loading custom fonts
   const [fontsLoaded, fontError] = useFonts({
     Vicons: require('project_root/node_modules/react-native-veel-icons/src/font/Vicons.ttf'),
   });

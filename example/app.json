@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sodipp.example"
     },
     "android": {
       "adaptiveIcon": {
@@ -30,7 +31,9 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/Vicons.ttf"]
+          "fonts": [
+            "node_modules/react-native-veel-icons/src/font/Vicons.ttf"
+          ]
         }
       ]
     ]
