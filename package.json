@@ -1,6 +1,6 @@
 {
   "name": "react-native-veel-icons",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "icons made for the veel react native app",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -56,6 +56,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.5.0",
+    "@react-native-masked-view/masked-view": "^0.3.1",
     "@react-native/eslint-config": "^0.72.2",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^28.1.2",
@@ -66,6 +67,7 @@
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "expo-linear-gradient": "^12.7.1",
     "jest": "^28.1.1",
     "prettier": "^2.0.5",
     "react": "18.2.0",
@@ -78,6 +80,8 @@
     "@types/react": "17.0.21"
   },
   "peerDependencies": {
+    "@react-native-masked-view/masked-view": "*",
+    "expo-linear-gradient": "*",
     "react": "*",
     "react-native": "*"
   },
@@ -160,11 +164,5 @@
         }
       ]
     ]
-  },
-  "dependencies": {
-    "@react-native-masked-view/masked-view": "^0.3.1",
-    "expo-asset": "^9.0.2",
-    "expo-font": "^11.10.2",
-    "expo-linear-gradient": "^12.7.0"
   }
 }
