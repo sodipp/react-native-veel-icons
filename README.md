@@ -11,41 +11,28 @@ expo icons made for the veel react native app
 
     - `@react-native-masked-view/masked-view`
     - `expo-linear-gradient`
+    - `expo-asset`
+    - `expo-font`
 
     Ensure that you have the correct versions of these dependencies by checking your `package.json` with file to avoid issues.
 
-2. Configure [`expo-fonts`](https://docs.expo.dev/versions/latest/sdk/font/) to load the `Vicons` font family file placed in `node_modules/react-native-veel-icons/src/font/Vicons.ttf`. You can either load it directly from there or copy it and manage it with your other assets.
-
-
 ## Usage
-
 ```js
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { useFonts } from 'expo-font';
 import { Vicon } from 'react-native-veel-icons';
 
 export default function App() {
-  const [fontsLoaded, fontError] = useFonts({
-    Vicons: require('.node_modules/react-native-veel-icons/Vicons.ttf'),
-  });
-
   return (
     <View style={styles.container}>
-      {fontsLoaded && !fontError ? (
-        <>
-          {/* default */}
-          <Vicon name="Vicons-tag" />
+      {/* default */}
+      <Vicon name="tag" />
 
-          {/* with speicific size and color values */}
-          <Vicon name="Vicons-video" size={40} color={['red']} />
+      {/* with speicific size and color values */}
+      <Vicon name="video" size={40} color={['red']} />
 
-          {/* gradient */}
-          <Vicon name="Vicons-setting" size={50} color={['red', 'blue']} />
-        </>
-      ) : (
-        <Text>Error while loading font</Text>
-      )}
+      {/* gradient */}
+      <Vicon name="setting" size={50} color={['red', 'blue']} />
     </View>
   );
 }
