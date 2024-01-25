@@ -1,7 +1,9 @@
 import React from 'react';
+import { useFonts } from 'expo-font';
 import { StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
+import { LogBox } from 'react-native';
 
 import glyphMap from '../src/font/unicodesMap.json';
 
@@ -10,6 +12,8 @@ interface IconGlyphMap {
 }
 
 const iconGlyphMap: IconGlyphMap = glyphMap;
+
+LogBox.ignoreLogs([`fontFamily "Vicons" is not a system font`]);
 
 export default function Vicon({
   name,
@@ -20,6 +24,10 @@ export default function Vicon({
   size?: number;
   color?: string[];
 }) {
+  const [fontsLoaded, fontError] = useFonts({
+    Vicons: require('./font/Vicons.ttf'),
+  });
+
   const isGradientIcon = Array.isArray(color) && color.length > 1;
 
   let glyph = name ? iconGlyphMap[name] || '??' : '';
@@ -57,5 +65,11 @@ export default function Vicon({
     </MaskedView>
   );
 
-  return isGradientIcon ? renderGradientIcon() : renderText();
+  return isGradientIcon && fontsLoaded && fontError === null ? (
+    renderGradientIcon()
+  ) : fontsLoaded && fontError === null ? (
+    renderText()
+  ) : (
+    <Text>[!]</Text>
+  );
 }
