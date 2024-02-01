@@ -1,9 +1,9 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import MaskedView from '@react-native-masked-view/masked-view';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import MaskedView from "@react-native-masked-view/masked-view";
 
-import glyphMap from '../src/font/unicodesMap.json';
+import glyphMap from "../src/font/unicodesMap.json";
 
 interface IconGlyphMap {
   [key: string]: number;
@@ -22,15 +22,15 @@ export default function Vicon({
 }) {
   const isGradientIcon = Array.isArray(color) && color.length > 1;
 
-  let glyph = name ? iconGlyphMap[name] || '??' : '';
-  if (typeof glyph === 'number') {
+  let glyph = name ? iconGlyphMap[name] || "??" : "";
+  if (typeof glyph === "number") {
     glyph = String.fromCodePoint(glyph);
   }
 
   const renderText = () => (
     <Text
       style={StyleSheet.flatten({
-        fontFamily: 'Vicons',
+        fontFamily: "Vicons",
         fontSize: size,
         color:
           Array.isArray(color) && color.length === 1 ? color[0] : undefined,
@@ -50,7 +50,7 @@ export default function Vicon({
         style={StyleSheet.flatten({
           height: size,
           width: size,
-          backgroundColor: 'transparent',
+          backgroundColor: "transparent",
         })}
         colors={Array.isArray(color) ? color : []}
       />

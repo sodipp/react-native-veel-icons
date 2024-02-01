@@ -1,14 +1,21 @@
-import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Vicon } from 'react-native-veel-icons';
+import * as React from "react";
+import { StyleSheet, View } from "react-native";
+import { Vicon } from "react-native-veel-icons";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Vicon name="video" color={['blue']} />
+      <Vicon
+        name="video"
+        color={["blue"]}
+      />
 
       {/* gradient */}
-      <Vicon name="setting" size={50} color={['green', 'red']} />
+      <Vicon
+        name="setting"
+        size={50}
+        color={["green", "red"]}
+      />
     </View>
   );
 }
@@ -16,8 +23,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   box: {
     width: 60,
