@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.sodipp.example"
@@ -32,9 +30,7 @@
       [
         "expo-font",
         {
-          "fonts": [
-            "src/Vicons.ttf"
-          ]
+          "fonts": ["src/VIcons.ttf"]
         }
       ]
     ]
