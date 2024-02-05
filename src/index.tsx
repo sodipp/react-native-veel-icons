@@ -1,1 +1,1 @@
-export { default as Vicon } from './Vicons';
+export { default as Vicon } from "./Vicons";

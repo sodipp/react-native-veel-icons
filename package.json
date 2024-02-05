@@ -1,6 +1,6 @@
 {
   "name": "react-native-veel-icons",
-  "version": "0.7.0",
+  "version": "0.7.2",
   "description": "icons made for the veel react native app",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -33,7 +33,8 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
     "prepare": "bob build",
-    "release": "release-it"
+    "release": "release-it",
+    "generate-font": "npx tsx ./svg2font.ts"
   },
   "keywords": [
     "react-native",
@@ -69,11 +70,14 @@
     "eslint-plugin-prettier": "^4.0.0",
     "expo-linear-gradient": "^12.7.1",
     "jest": "^28.1.1",
+    "oslllo-svg-fixer": "^3.0.0",
     "prettier": "^2.0.5",
     "react": "18.2.0",
     "react-native": "0.73.2",
     "react-native-builder-bob": "^0.20.0",
     "release-it": "^15.0.0",
+    "svgtofont": "^4.1.1",
+    "tsx": "^4.7.0",
     "typescript": "^5.0.2"
   },
   "resolutions": {
@@ -170,5 +174,6 @@
         }
       ]
     ]
-  }
+  },
+  "type": "module"
 }

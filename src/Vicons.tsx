@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import MaskedView from "@react-native-masked-view/masked-view";
 
-import glyphMap from "../src/font/unicodesMap.json";
+import glyphMap from "../src/font/info.json";
 
 interface IconGlyphMap {
-  [key: string]: number;
+  [key: string]: { [key: string]: string };
 }
 
 const iconGlyphMap: IconGlyphMap = glyphMap;
