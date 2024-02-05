@@ -1,57 +1,66 @@
-import { default as FS } from "fs-extra";
-import { resolve } from "path";
+import fs from "fs-extra";
+import path from "path";
 import SVGFixer from "oslllo-svg-fixer";
 import svg2font from "svgtofont";
 import type { SvgToFontOptions } from "svgtofont";
 
-const svgFolderPath = resolve(process.cwd(), "svg2");
-const fontFolderPath = resolve(process.cwd(), "src/font");
-const unicodesMapPath = resolve(process.cwd(), "src/font/unicodesMap.json");
+const fontName = "VIcons";
 
-const glphMap = FS.readJSONSync(unicodesMapPath);
+const svgFolderPath = path.join(process.cwd(), "svgs");
+const svgFixedFolderPath = path.join(process.cwd(), "svgs/fixed");
+const fontFolderPath = path.join(process.cwd(), "src/font");
+const unicodesMapPath = path.join(process.cwd(), "src/font/unicodesMap.json");
+const fontInfoFilePath = path.join(process.cwd(), "src/font/info.json");
+
+const unrequiredfontFiles = [
+  `${fontName}.svg`,
+  `${fontName}.symbol.svg`,
+  `${fontName}.woff`,
+  `${fontName}.woff2`,
+  `${fontName}.eot`,
+];
+
+const glphMap = fs.readJSONSync(unicodesMapPath);
 
 const options: SvgToFontOptions = {
-  src: svgFolderPath,
+  src: svgFixedFolderPath,
   dist: fontFolderPath,
-  fontName: "VIcon1",
+  fontName: fontName,
   classNamePrefix: "",
   css: false,
   generateInfoData: true,
   outSVGPath: false,
   outSVGReactNative: false,
   svgicons2svgfont: {
-    fontName: "VIcon1",
+    fontName: fontName,
+    fontHeight: 2000,
     normalize: true,
-    fontHeight: 2500,
   },
 };
 
 async function createFont() {
   try {
-    await SVGFixer(svgFolderPath, svgFolderPath, {
+    await SVGFixer(svgFolderPath, svgFixedFolderPath, {
       showProgressBar: true,
       throwIfDestinationDoesNotExist: false,
     }).fix();
 
     await svg2font(options);
 
-    const infoData = require("../src/font/info.json");
+    unrequiredfontFiles.forEach((file) => {
+      fs.unlink(path.join(fontFolderPath, file));
+    });
+    fs.rm(svgFixedFolderPath, { recursive: true, force: true }, () => {});
 
+    const infoData = fs.readJSONSync(fontInfoFilePath);
     if (infoData) {
       Object.keys(infoData).forEach((key) => {
         const unicodeValue = parseInt(infoData[key].unicode.slice(2, -1), 10);
         glphMap[key] = unicodeValue;
       });
 
-      FS.writeJSONSync(unicodesMapPath, glphMap);
+      fs.writeJSONSync(unicodesMapPath, glphMap);
     }
-
-    FS.unlinkSync(resolve(fontFolderPath, "Vicons.svg"));
-    FS.unlinkSync(resolve(fontFolderPath, "Vicons.symbol.svg"));
-    FS.unlinkSync(resolve(fontFolderPath, "Vicons.woff"));
-    FS.unlinkSync(resolve(fontFolderPath, "Vicons.woff2"));
-    FS.unlinkSync(resolve(fontFolderPath, "Vicons.eot"));
-
     console.log("Font creation successful!");
   } catch (error) {
     console.error("Error during font creation:", error);

@@ -1,350 +1,386 @@
 {
-  "add copy": {
+  "add": {
     "encodedCode": "\\ea01",
-    "prefix": "VIcon1",
-    "className": "VIcon1-add copy",
+    "prefix": "VIcons",
+    "className": "VIcons-add",
     "unicode": "&#59905;"
   },
-  "add": {
+  "arrowhead-down": {
     "encodedCode": "\\ea02",
-    "prefix": "VIcon1",
-    "className": "VIcon1-add",
+    "prefix": "VIcons",
+    "className": "VIcons-arrowhead-down",
     "unicode": "&#59906;"
   },
-  "arrowhead-down copy": {
+  "arrowhead-left": {
     "encodedCode": "\\ea03",
-    "prefix": "VIcon1",
-    "className": "VIcon1-arrowhead-down copy",
+    "prefix": "VIcons",
+    "className": "VIcons-arrowhead-left",
     "unicode": "&#59907;"
   },
-  "arrowhead-down": {
+  "authenticity": {
     "encodedCode": "\\ea04",
-    "prefix": "VIcon1",
-    "className": "VIcon1-arrowhead-down",
+    "prefix": "VIcons",
+    "className": "VIcons-authenticity",
     "unicode": "&#59908;"
   },
-  "arrowhead-left copy": {
+  "bookmark": {
     "encodedCode": "\\ea05",
-    "prefix": "VIcon1",
-    "className": "VIcon1-arrowhead-left copy",
+    "prefix": "VIcons",
+    "className": "VIcons-bookmark",
     "unicode": "&#59909;"
   },
-  "arrowhead-left": {
+  "bug": {
     "encodedCode": "\\ea06",
-    "prefix": "VIcon1",
-    "className": "VIcon1-arrowhead-left",
+    "prefix": "VIcons",
+    "className": "VIcons-bug",
     "unicode": "&#59910;"
   },
-  "authenticity copy": {
+  "call": {
     "encodedCode": "\\ea07",
-    "prefix": "VIcon1",
-    "className": "VIcon1-authenticity copy",
+    "prefix": "VIcons",
+    "className": "VIcons-call",
     "unicode": "&#59911;"
   },
-  "authenticity": {
+  "campaign": {
     "encodedCode": "\\ea08",
-    "prefix": "VIcon1",
-    "className": "VIcon1-authenticity",
+    "prefix": "VIcons",
+    "className": "VIcons-campaign",
     "unicode": "&#59912;"
   },
-  "bookmark copy": {
+  "cancel-circle-filled": {
     "encodedCode": "\\ea09",
-    "prefix": "VIcon1",
-    "className": "VIcon1-bookmark copy",
+    "prefix": "VIcons",
+    "className": "VIcons-cancel-circle-filled",
     "unicode": "&#59913;"
   },
-  "bookmark": {
+  "cancel-circle": {
     "encodedCode": "\\ea0a",
-    "prefix": "VIcon1",
-    "className": "VIcon1-bookmark",
+    "prefix": "VIcons",
+    "className": "VIcons-cancel-circle",
     "unicode": "&#59914;"
   },
-  "bug copy": {
+  "capture": {
     "encodedCode": "\\ea0b",
-    "prefix": "VIcon1",
-    "className": "VIcon1-bug copy",
+    "prefix": "VIcons",
+    "className": "VIcons-capture",
     "unicode": "&#59915;"
   },
-  "bug": {
+  "chat": {
     "encodedCode": "\\ea0c",
-    "prefix": "VIcon1",
-    "className": "VIcon1-bug",
+    "prefix": "VIcons",
+    "className": "VIcons-chat",
     "unicode": "&#59916;"
   },
-  "call copy": {
+  "check-cirlce": {
     "encodedCode": "\\ea0d",
-    "prefix": "VIcon1",
-    "className": "VIcon1-call copy",
+    "prefix": "VIcons",
+    "className": "VIcons-check-cirlce",
     "unicode": "&#59917;"
   },
-  "call": {
+  "check": {
     "encodedCode": "\\ea0e",
-    "prefix": "VIcon1",
-    "className": "VIcon1-call",
+    "prefix": "VIcons",
+    "className": "VIcons-check",
     "unicode": "&#59918;"
   },
-  "campaign copy": {
+  "clock": {
     "encodedCode": "\\ea0f",
-    "prefix": "VIcon1",
-    "className": "VIcon1-campaign copy",
+    "prefix": "VIcons",
+    "className": "VIcons-clock",
     "unicode": "&#59919;"
   },
-  "campaign": {
+  "collaboration": {
     "encodedCode": "\\ea10",
-    "prefix": "VIcon1",
-    "className": "VIcon1-campaign",
+    "prefix": "VIcons",
+    "className": "VIcons-collaboration",
     "unicode": "&#59920;"
   },
-  "cancel-circle copy": {
+  "content-creator": {
     "encodedCode": "\\ea11",
-    "prefix": "VIcon1",
-    "className": "VIcon1-cancel-circle copy",
+    "prefix": "VIcons",
+    "className": "VIcons-content-creator",
     "unicode": "&#59921;"
   },
-  "cancel-circle-filled copy": {
+  "content-verified": {
     "encodedCode": "\\ea12",
-    "prefix": "VIcon1",
-    "className": "VIcon1-cancel-circle-filled copy",
+    "prefix": "VIcons",
+    "className": "VIcons-content-verified",
     "unicode": "&#59922;"
   },
-  "cancel-circle-filled": {
+  "diamond-alter-filled": {
     "encodedCode": "\\ea13",
-    "prefix": "VIcon1",
-    "className": "VIcon1-cancel-circle-filled",
+    "prefix": "VIcons",
+    "className": "VIcons-diamond-alter-filled",
     "unicode": "&#59923;"
   },
-  "cancel-circle": {
+  "diamond-bold": {
     "encodedCode": "\\ea14",
-    "prefix": "VIcon1",
-    "className": "VIcon1-cancel-circle",
+    "prefix": "VIcons",
+    "className": "VIcons-diamond-bold",
     "unicode": "&#59924;"
   },
-  "capture copy": {
+  "diamond-filled": {
     "encodedCode": "\\ea15",
-    "prefix": "VIcon1",
-    "className": "VIcon1-capture copy",
+    "prefix": "VIcons",
+    "className": "VIcons-diamond-filled",
     "unicode": "&#59925;"
   },
-  "capture": {
+  "diamond": {
     "encodedCode": "\\ea16",
-    "prefix": "VIcon1",
-    "className": "VIcon1-capture",
+    "prefix": "VIcons",
+    "className": "VIcons-diamond",
     "unicode": "&#59926;"
   },
-  "chat copy": {
+  "disabled-filled": {
     "encodedCode": "\\ea17",
-    "prefix": "VIcon1",
-    "className": "VIcon1-chat copy",
+    "prefix": "VIcons",
+    "className": "VIcons-disabled-filled",
     "unicode": "&#59927;"
   },
-  "chat": {
+  "document-alter": {
     "encodedCode": "\\ea18",
-    "prefix": "VIcon1",
-    "className": "VIcon1-chat",
+    "prefix": "VIcons",
+    "className": "VIcons-document-alter",
     "unicode": "&#59928;"
   },
-  "check copy": {
+  "document": {
     "encodedCode": "\\ea19",
-    "prefix": "VIcon1",
-    "className": "VIcon1-check copy",
+    "prefix": "VIcons",
+    "className": "VIcons-document",
     "unicode": "&#59929;"
   },
-  "check-cirlce copy": {
+  "double-check": {
     "encodedCode": "\\ea1a",
-    "prefix": "VIcon1",
-    "className": "VIcon1-check-cirlce copy",
+    "prefix": "VIcons",
+    "className": "VIcons-double-check",
     "unicode": "&#59930;"
   },
-  "check-cirlce": {
+  "explore": {
     "encodedCode": "\\ea1b",
-    "prefix": "VIcon1",
-    "className": "VIcon1-check-cirlce",
+    "prefix": "VIcons",
+    "className": "VIcons-explore",
     "unicode": "&#59931;"
   },
-  "check": {
+  "eye-close": {
     "encodedCode": "\\ea1c",
-    "prefix": "VIcon1",
-    "className": "VIcon1-check",
+    "prefix": "VIcons",
+    "className": "VIcons-eye-close",
     "unicode": "&#59932;"
   },
-  "clock copy": {
+  "home": {
     "encodedCode": "\\ea1d",
-    "prefix": "VIcon1",
-    "className": "VIcon1-clock copy",
+    "prefix": "VIcons",
+    "className": "VIcons-home",
     "unicode": "&#59933;"
   },
-  "clock": {
+  "information-circle": {
     "encodedCode": "\\ea1e",
-    "prefix": "VIcon1",
-    "className": "VIcon1-clock",
+    "prefix": "VIcons",
+    "className": "VIcons-information-circle",
     "unicode": "&#59934;"
   },
-  "collaboration copy": {
+  "left-arrow": {
     "encodedCode": "\\ea1f",
-    "prefix": "VIcon1",
-    "className": "VIcon1-collaboration copy",
+    "prefix": "VIcons",
+    "className": "VIcons-left-arrow",
     "unicode": "&#59935;"
   },
-  "collaboration": {
+  "link": {
     "encodedCode": "\\ea20",
-    "prefix": "VIcon1",
-    "className": "VIcon1-collaboration",
+    "prefix": "VIcons",
+    "className": "VIcons-link",
     "unicode": "&#59936;"
   },
-  "content-creator copy": {
+  "logout": {
     "encodedCode": "\\ea21",
-    "prefix": "VIcon1",
-    "className": "VIcon1-content-creator copy",
+    "prefix": "VIcons",
+    "className": "VIcons-logout",
     "unicode": "&#59937;"
   },
-  "content-creator": {
+  "map": {
     "encodedCode": "\\ea22",
-    "prefix": "VIcon1",
-    "className": "VIcon1-content-creator",
+    "prefix": "VIcons",
+    "className": "VIcons-map",
     "unicode": "&#59938;"
   },
-  "content-verified copy": {
+  "monetization": {
     "encodedCode": "\\ea23",
-    "prefix": "VIcon1",
-    "className": "VIcon1-content-verified copy",
+    "prefix": "VIcons",
+    "className": "VIcons-monetization",
     "unicode": "&#59939;"
   },
-  "content-verified": {
+  "next mods": {
     "encodedCode": "\\ea24",
-    "prefix": "VIcon1",
-    "className": "VIcon1-content-verified",
+    "prefix": "VIcons",
+    "className": "VIcons-next mods",
     "unicode": "&#59940;"
   },
-  "diamond copy": {
+  "notification": {
     "encodedCode": "\\ea25",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond copy",
+    "prefix": "VIcons",
+    "className": "VIcons-notification",
     "unicode": "&#59941;"
   },
-  "diamond-alter-filled copy": {
+  "pause-circle-filled": {
     "encodedCode": "\\ea26",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond-alter-filled copy",
+    "prefix": "VIcons",
+    "className": "VIcons-pause-circle-filled",
     "unicode": "&#59942;"
   },
-  "diamond-alter-filled": {
+  "payment": {
     "encodedCode": "\\ea27",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond-alter-filled",
+    "prefix": "VIcons",
+    "className": "VIcons-payment",
     "unicode": "&#59943;"
   },
-  "diamond-bold copy": {
+  "play-circle": {
     "encodedCode": "\\ea28",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond-bold copy",
+    "prefix": "VIcons",
+    "className": "VIcons-play-circle",
     "unicode": "&#59944;"
   },
-  "diamond-bold": {
+  "plus-cirlce": {
     "encodedCode": "\\ea29",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond-bold",
+    "prefix": "VIcons",
+    "className": "VIcons-plus-cirlce",
     "unicode": "&#59945;"
   },
-  "diamond-filled copy": {
+  "plus": {
     "encodedCode": "\\ea2a",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond-filled copy",
+    "prefix": "VIcons",
+    "className": "VIcons-plus",
     "unicode": "&#59946;"
   },
-  "diamond-filled": {
+  "radio-filled": {
     "encodedCode": "\\ea2b",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond-filled",
+    "prefix": "VIcons",
+    "className": "VIcons-radio-filled",
     "unicode": "&#59947;"
   },
-  "diamond": {
+  "radio": {
     "encodedCode": "\\ea2c",
-    "prefix": "VIcon1",
-    "className": "VIcon1-diamond",
+    "prefix": "VIcons",
+    "className": "VIcons-radio",
     "unicode": "&#59948;"
   },
-  "disabled-filled copy": {
+  "retake": {
     "encodedCode": "\\ea2d",
-    "prefix": "VIcon1",
-    "className": "VIcon1-disabled-filled copy",
+    "prefix": "VIcons",
+    "className": "VIcons-retake",
     "unicode": "&#59949;"
   },
-  "disabled-filled": {
+  "right-arrow": {
     "encodedCode": "\\ea2e",
-    "prefix": "VIcon1",
-    "className": "VIcon1-disabled-filled",
+    "prefix": "VIcons",
+    "className": "VIcons-right-arrow",
     "unicode": "&#59950;"
   },
-  "right-arrow copy": {
+  "rocket": {
     "encodedCode": "\\ea2f",
-    "prefix": "VIcon1",
-    "className": "VIcon1-right-arrow copy",
+    "prefix": "VIcons",
+    "className": "VIcons-rocket",
     "unicode": "&#59951;"
   },
-  "right-arrow": {
+  "search": {
     "encodedCode": "\\ea30",
-    "prefix": "VIcon1",
-    "className": "VIcon1-right-arrow",
+    "prefix": "VIcons",
+    "className": "VIcons-search",
     "unicode": "&#59952;"
   },
-  "rocket copy": {
+  "send-campaign": {
     "encodedCode": "\\ea31",
-    "prefix": "VIcon1",
-    "className": "VIcon1-rocket copy",
+    "prefix": "VIcons",
+    "className": "VIcons-send-campaign",
     "unicode": "&#59953;"
   },
-  "rocket": {
+  "send-cancel": {
     "encodedCode": "\\ea32",
-    "prefix": "VIcon1",
-    "className": "VIcon1-rocket",
+    "prefix": "VIcons",
+    "className": "VIcons-send-cancel",
     "unicode": "&#59954;"
   },
-  "search copy": {
+  "star-full-filled": {
     "encodedCode": "\\ea33",
-    "prefix": "VIcon1",
-    "className": "VIcon1-search copy",
+    "prefix": "VIcons",
+    "className": "VIcons-star-full-filled",
     "unicode": "&#59955;"
   },
-  "search": {
+  "star-half-filled": {
     "encodedCode": "\\ea34",
-    "prefix": "VIcon1",
-    "className": "VIcon1-search",
+    "prefix": "VIcons",
+    "className": "VIcons-star-half-filled",
     "unicode": "&#59956;"
   },
-  "videos copy": {
+  "star-unfilled": {
     "encodedCode": "\\ea35",
-    "prefix": "VIcon1",
-    "className": "VIcon1-videos copy",
+    "prefix": "VIcons",
+    "className": "VIcons-star-unfilled",
     "unicode": "&#59957;"
   },
-  "videos": {
+  "talent": {
     "encodedCode": "\\ea36",
-    "prefix": "VIcon1",
-    "className": "VIcon1-videos",
+    "prefix": "VIcons",
+    "className": "VIcons-talent",
     "unicode": "&#59958;"
   },
-  "visibility copy": {
+  "tax": {
     "encodedCode": "\\ea37",
-    "prefix": "VIcon1",
-    "className": "VIcon1-visibility copy",
+    "prefix": "VIcons",
+    "className": "VIcons-tax",
     "unicode": "&#59959;"
   },
-  "visibility": {
+  "up-arrow-circle": {
     "encodedCode": "\\ea38",
-    "prefix": "VIcon1",
-    "className": "VIcon1-visibility",
+    "prefix": "VIcons",
+    "className": "VIcons-up-arrow-circle",
     "unicode": "&#59960;"
   },
-  "window copy": {
+  "user-video": {
     "encodedCode": "\\ea39",
-    "prefix": "VIcon1",
-    "className": "VIcon1-window copy",
+    "prefix": "VIcons",
+    "className": "VIcons-user-video",
     "unicode": "&#59961;"
   },
-  "window": {
+  "users-plus": {
     "encodedCode": "\\ea3a",
-    "prefix": "VIcon1",
-    "className": "VIcon1-window",
+    "prefix": "VIcons",
+    "className": "VIcons-users-plus",
     "unicode": "&#59962;"
+  },
+  "users": {
+    "encodedCode": "\\ea3b",
+    "prefix": "VIcons",
+    "className": "VIcons-users",
+    "unicode": "&#59963;"
+  },
+  "video-pause": {
+    "encodedCode": "\\ea3c",
+    "prefix": "VIcons",
+    "className": "VIcons-video-pause",
+    "unicode": "&#59964;"
+  },
+  "video": {
+    "encodedCode": "\\ea3d",
+    "prefix": "VIcons",
+    "className": "VIcons-video",
+    "unicode": "&#59965;"
+  },
+  "videos": {
+    "encodedCode": "\\ea3e",
+    "prefix": "VIcons",
+    "className": "VIcons-videos",
+    "unicode": "&#59966;"
+  },
+  "visibility": {
+    "encodedCode": "\\ea3f",
+    "prefix": "VIcons",
+    "className": "VIcons-visibility",
+    "unicode": "&#59967;"
+  },
+  "window": {
+    "encodedCode": "\\ea40",
+    "prefix": "VIcons",
+    "className": "VIcons-window",
+    "unicode": "&#59968;"
   }
 }
