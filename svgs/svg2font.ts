@@ -18,9 +18,8 @@ const unrequiredfontFiles = [
   `${fontName}.woff`,
   `${fontName}.woff2`,
   `${fontName}.eot`,
+  "unicodesMap.json",
 ];
-
-const glphMap = fs.readJSONSync(unicodesMapPath);
 
 const options: SvgToFontOptions = {
   src: svgFixedFolderPath,
@@ -33,7 +32,7 @@ const options: SvgToFontOptions = {
   outSVGReactNative: false,
   svgicons2svgfont: {
     fontName: fontName,
-    fontHeight: 2000,
+    fontHeight: 1500,
     normalize: true,
   },
 };
@@ -54,6 +53,8 @@ async function createFont() {
 
     const infoData = fs.readJSONSync(fontInfoFilePath);
     if (infoData) {
+      const glphMap: { [key: string]: string | number } = {};
+
       Object.keys(infoData).forEach((key) => {
         const unicodeValue = parseInt(infoData[key].unicode.slice(2, -1), 10);
         glphMap[key] = unicodeValue;
